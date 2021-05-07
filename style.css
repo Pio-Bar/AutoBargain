@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Fira_Sans;
+    src: url(./Assets/Fonts/Fira_Sans/FiraSans-Medium.ttf);
+  }
+  
+body{
+    font-family: Fira_Sans;
+    overflow-x: hidden;
+  }
+
+.hidden{
+  display: none;
+}

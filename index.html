@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Hustler</title>
+    <link rel="stylesheet" href="./Assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow">
+      <div class="container-lg">
+        <a class="navbar-brand" href="#">
+          <img src="./Assets/images/tire.svg" width="28px" alt="Brand logo" />
+          Auto Hustler
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Volkswagen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BMW</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mercedes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Opel</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- CARDS -->
+    <main class="container-lg p-2" id="cardContainer">
+      <div class="card mb-3 shadow-sm">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img class="img-fluid" src="./Assets/images/Golf3.jpg" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="row card-body">
+              <div class="col-7">
+                <h2 class="card-title">Volkswagen Golf III</h2>
+                <p class="card-text text-muted">
+                  Year: 1998 <br />
+                  Milage: 252 700 km <br />
+                  Version: 1.9 SDI + LPG
+                </p>
+              </div>
+              <div class="col-5">
+                <h1 class="card-text card-price">
+                  <strong>9 900,00 zł </strong>
+                </h1>
+                <h4
+                  class="card-text card-full-price text-decoration-line-through text-muted"
+                >
+                  <strong>10 000,00 zł </strong>
+                </h4>
+                <div class="d-grid">
+                  <button class="btn btn-primary btn-card" type="button">
+                    Order now!
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 shadow-sm">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img class="img-fluid" src="./Assets/images/Golf3.jpg" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="row card-body">
+              <div class="col-7">
+                <h2 class="card-title">Audi A3</h2>
+                <p class="card-text text-muted">
+                  Year: 1998 <br />
+                  Milage: 252 700 km <br />
+                  Version: 1.9 SDI + LPG
+                </p>
+              </div>
+              <div class="col-5">
+                <h1 class="card-text card-price">
+                  <strong>20 900,00 zł </strong>
+                </h1>
+                <h4
+                  class="card-text card-full-price text-decoration-line-through text-muted"
+                >
+                  <strong>22 000,00 zł </strong>
+                </h4>
+                <div class="d-grid">
+                  <button class="btn btn-primary btn-card" type="button">
+                    Order now!
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 shadow-sm">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img class="img-fluid" src="./Assets/images/Golf3.jpg" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="row card-body">
+              <div class="col-7">
+                <h2 class="card-title">Lorem, ipsum dolor.</h2>
+                <p class="card-text text-muted">
+                  Year: 1998 <br />
+                  Milage: 252 700 km <br />
+                  Version: 1.9 SDI + LPG
+                </p>
+              </div>
+              <div class="col-5">
+                <h1 class="card-text card-price">
+                  <strong>11 900,00 zł </strong>
+                </h1>
+                <h4
+                  class="card-text card-full-price text-decoration-line-through text-muted"
+                >
+                  <strong class="">13 000,00 zł </strong>
+                </h4>
+                <div class="d-grid">
+                  <button class="btn btn-primary btn-card" type="button">
+                    Order now!
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- PURCHASE FORM -->
+    <section class="container-lg p-2">
+      <div class="row">
+        <div class="col-md-7 p-4">
+          <form class="row g-3" id="form">
+            <div class="col-md-6">
+              <label for="inputName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="inputName" />
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail" />
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="1234 Main St"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity" />
+            </div>
+            <div class="col-md-6">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip" />
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label"
+                >Date of shipment</label
+              >
+              <input
+                type="date"
+                class="form-control"
+                id="inputAddress2"
+                placeholder="Apartment, studio, or floor"
+              />
+            </div>
+            <div class="container">
+              <div class="row mt-4" id="addonsContainer">
+                <div
+                  class="col-4 d-flex justify-content-center flex-column form-check"
+                >
+                  <img src="./Assets/images/spanner.svg" alt="warranty icon" />
+                  <p class="text-center">Extended warranty</p>
+                  <input
+                    value="2000"
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-warranty"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-primary" for="btn-warranty">Add</label>
+                </div>
+                <div
+                  class="col-4 d-flex justify-content-center flex-column form-check"
+                >
+                  <img
+                    src="./Assets/images/insurance.svg"
+                    alt="insurance icon"
+                  />
+                  <p class="text-center">Insurance package</p>
+                  <input
+                    value="1500"
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-insurance"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-primary" for="btn-insurance">Add</label>
+                </div>
+                <div
+                  class="col-4 d-flex justify-content-center flex-column form-check"
+                >
+                  <img src="./Assets/images/snow.svg" alt="winter tires icon" />
+                  <p class="text-center">Set of winter tires</p>
+                  <input
+                    value="1000"
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-winter"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-primary" for="btn-winter">Add</label>
+                </div>
+              </div>
+            </div>
+            <h3 class="d-block text-center">Method of payment</h3>
+            <div class="col-12 btn-group">
+              <input
+                type="radio"
+                class="btn-check"
+                name="payment"
+                id="option1"
+                autocomplete="off"
+                checked
+              />
+              <label class="btn btn-primary" for="option1">Cash</label>
+              <input
+                type="radio"
+                class="btn-check"
+                name="payment"
+                id="option2"
+                autocomplete="off"
+              />
+              <label class="btn btn-primary" for="option2">Leasing</label>
+            </div>
+          </form>
+          <!-- CHECKOUT -->
+        </div>
+        <div class="col-md-5">
+          <img class="img-fluid" src="./Assets/images/Golf3.jpg" alt="Golf3" />
+          <div class="p-5 text-left">
+            <h2><strong id="checkoutTitle">Volkswagen Golf III</strong></h2>
+            <div id="addonsCheckout">
+              <h4>+ Extended warranty</h4>
+              <p class="text-muted">2000 zł</p>
+              <h4>+ Insurance package</h4>
+              <p class="text-muted">2000 zł</p>
+              <h4>+ Set of winter tires</h4>
+              <p class="text-muted">2000 zł</p>
+            </div>
+            <div class="pt-5 text-center">
+              <h1 class="card-text bold">
+                <strong
+                  >Total: <span id="checkoutPrice">9 900,00</span> zł</strong
+                >
+              </h1>
+              <h4 class="card-text bold text-muted">
+                Total Savings: <span id="checkoutSavings">1000</span> zł
+              </h4>
+              <button type="submit" form="form" class="btn btn-primary m-2">
+                Complete order!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./Assets/bootstrap/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
