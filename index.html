@@ -165,14 +165,21 @@
     <section class="container-lg p-2">
       <div class="row">
         <div class="col-md-7 p-4">
-          <form class="row g-3" id="form">
+          <form class="row g-3" id="form" novalidate>
             <div class="col-md-6">
               <label for="inputName" class="form-label">Name</label>
-              <input type="text" class="form-control" id="inputName" />
+              <input type="text" class="form-control" id="inputName" required />
+              <div class="invalid-feedback">Name is required!</div>
             </div>
             <div class="col-md-6">
               <label for="inputEmail" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail" />
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                required
+              />
+              <div class="invalid-feedback">Valid email is required!</div>
             </div>
             <div class="col-12">
               <label for="inputAddress" class="form-label">Address</label>
@@ -181,26 +188,28 @@
                 class="form-control"
                 id="inputAddress"
                 placeholder="1234 Main St"
+                required
               />
+              <div class="invalid-feedback">Address is required!</div>
             </div>
             <div class="col-md-6">
               <label for="inputCity" class="form-label">City</label>
-              <input type="text" class="form-control" id="inputCity" />
+              <input type="text" class="form-control" id="inputCity" required />
+              <div class="invalid-feedback">City is required!</div>
             </div>
             <div class="col-md-6">
               <label for="inputZip" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="inputZip" />
+              <input type="text" class="form-control" id="inputZip" required />
+              <div class="invalid-feedback">Zip code is required!</div>
             </div>
             <div class="col-12">
               <label for="inputAddress2" class="form-label"
                 >Date of shipment</label
               >
-              <input
-                type="date"
-                class="form-control"
-                id="inputAddress2"
-                placeholder="Apartment, studio, or floor"
-              />
+              <input type="date" class="form-control" id="date" required />
+              <div class="invalid-feedback">
+                Delivery date cannot be earlier than 14 days!
+              </div>
             </div>
             <div class="container">
               <div class="row mt-4" id="addonsContainer">
