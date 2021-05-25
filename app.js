@@ -141,6 +141,7 @@ cardContainer.addEventListener("click", (e) => {
     selectCar(target);
   }
   togglePage();
+  window.scroll(0, 0);
 });
 
 //Get target and add a product to checkout

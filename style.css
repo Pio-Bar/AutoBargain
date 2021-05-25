@@ -84,3 +84,15 @@ img[src$=".svg"] {
     object-fit: cover;
   }
 }
+
+@media (max-width: 920px) {
+  #addonsContainer p {
+    height: 2.8rem;
+  }
+}
+
+@media (max-width: 535px) {
+  #addonsContainer p {
+    height: 4.1rem;
+  }
+}
