@@ -182,7 +182,7 @@ const inTwoWeeksDateISO = date.toISOString().substr(0, 10);
 dateInput.value = inTwoWeeksDateISO;
 dateInput.min = inTwoWeeksDateISO;
 
-//Reseting the page and clearing local storage
+//Resetting the page and clearing local storage
 backToMainBtn.addEventListener("click", () => {
   localStorage.clear();
   location.reload();
